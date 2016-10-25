@@ -23,14 +23,15 @@ static VALUE pgconn_set_default_encoding( VALUE self );
 void pgconn_set_internal_encoding_index( VALUE );
 #endif
 
-#ifndef HAVE_RB_THREAD_FD_SELECT
-#define rb_fdset_t fd_set
-#define rb_fd_init(f)
-#define rb_fd_zero(f)  FD_ZERO(f)
-#define rb_fd_set(n, f)  FD_SET(n, f)
-#define rb_fd_term(f)
-#define rb_thread_fd_select rb_thread_select
-#endif
+
+
+
+
+
+
+
+
+
 
 /*
  * Global functions
